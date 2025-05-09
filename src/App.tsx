@@ -10,6 +10,7 @@ import Skills from "./components/skills";
 import Services from "./components/services";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
+import { LanguageSelectionDialog } from "./components/language-selection-dialog";
 import routes from "tempo-routes";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <LanguageProvider>
         <Suspense fallback={<p className="p-4">Loading...</p>}>
           <Layout>
+            <LanguageSelectionDialog />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutMe />} />
