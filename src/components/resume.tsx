@@ -126,9 +126,11 @@ function Resume() {
             )}
           </p>
         </div>
-        <Button className="mt-4 md:mt-0">
-          <Download className="mr-2 h-4 w-4" />{" "}
-          {t("Download CV", "Télécharger CV")}
+        <Button className="mt-4 md:mt-0" asChild>
+          <a href="/cv.pdf" download>
+            <Download className="mr-2 h-4 w-4" />{" "}
+            {t("Download CV", "Télécharger CV")}
+          </a>
         </Button>
       </div>
 

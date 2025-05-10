@@ -26,9 +26,11 @@ function AboutMe() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg">
-                <Download className="mr-2 h-4 w-4" />{" "}
-                {t("Download CV", "Télécharger CV")}
+              <Button variant="outline" size="lg" asChild>
+                <a href="/cv.pdf" download>
+                  <Download className="mr-2 h-4 w-4" />{" "}
+                  {t("Download CV", "Télécharger CV")}
+                </a>
               </Button>
             </div>
           </div>
